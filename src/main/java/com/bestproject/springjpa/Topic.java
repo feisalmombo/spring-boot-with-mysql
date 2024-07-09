@@ -1,5 +1,8 @@
 package com.bestproject.springjpa;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Topic {
 
     private String id;
