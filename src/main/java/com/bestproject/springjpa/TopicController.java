@@ -15,31 +15,31 @@ public class TopicController {
     @Autowired
     private TopicService topicService;
 
-    // Get All Topic
+    // Get All Topic Route
     @RequestMapping("/topics")
     public List<Topic> getAllTopics() {
         return topicService.getAllTopics();
     }
 
-    // Single Topic with id
+    // Single Topic with id Route
     @RequestMapping("/topics/{id}")
     public Topic getTopic(@PathVariable String id) {
         return topicService.getTopic(id);
     }
 
-    // Add Topic
+    // Add Topic Route
     @RequestMapping(method = RequestMethod.POST, value = "/topics")
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
     }
 
-    // Update Topic
+    // Update Topic Route
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
         topicService.updateTopic(id, topic);
     }
 
-    // Delete Topic
+    // Delete Topic Route
     @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")
     public void deleteTopic(@PathVariable String id) {
         topicService.deleteTopic(id);
