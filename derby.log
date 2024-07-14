@@ -1,0 +1,29 @@
+----------------------------------------------------------------
+Sat Jul 13 17:00:32 EAT 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-0190-ac65-36e7-000002407a48 
+on database directory memory:D:\SPRING BOOT PROJECTS\springjpa\744c9464-41d2-4c7c-b71c-36f24226b826 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/MOTIONSTARLIGHT/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.11+9
+user.dir=D:\SPRING BOOT PROJECTS\springjpa
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Jul 14 18:14:19 EAT 2024:
+Shutting down instance a816c00e-0190-ac65-36e7-000002407a48 on database directory memory:D:\SPRING BOOT PROJECTS\springjpa\744c9464-41d2-4c7c-b71c-36f24226b826 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+----------------------------------------------------------------
+Sun Jul 14 18:14:21 EAT 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance 83ba410f-0190-ac65-36e7-000002407a48 
+on database directory memory:D:\SPRING BOOT PROJECTS\springjpa\4a36ac03-46dd-4bd8-9a84-0493945058f9 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/MOTIONSTARLIGHT/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.11+9
+user.dir=D:\SPRING BOOT PROJECTS\springjpa
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
