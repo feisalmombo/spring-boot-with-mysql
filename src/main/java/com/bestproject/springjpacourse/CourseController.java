@@ -16,31 +16,26 @@ public class CourseController {
     @Autowired
     private CourseService courseService;
 
-    // Get All Course Route
     @RequestMapping("/topics/{id}/courses")
-    public List<Course> getAllCourses() {
-        return courseService.getAllCourses();
+    public List<Course> getAllCourses(@PathVariable String id) {
+        return courseService.getAllCourses(id);
     }
 
-    // Single Course with id Route
-    @RequestMapping("/topics/{id}")
+    @RequestMapping("/topics/{topicId}/courses/{id}")
     public Optional<Course> getTopic(@PathVariable String id) {
         return courseService.getCourse(id);
     }
 
-    // Add Course Route
     @RequestMapping(method = RequestMethod.POST, value = "/topics")
     public void addCourse(@RequestBody Course topic) {
         courseService.addCourse(topic);
     }
 
-    // Update Course Route
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateCourse(@RequestBody Course topic, @PathVariable String id) {
         courseService.updateCourse(id, topic);
     }
 
-    // Delete Course Route
     @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")
     public void deleteCourse(@PathVariable String id) {
         courseService.deleteCourse(id);

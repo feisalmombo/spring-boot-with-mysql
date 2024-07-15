@@ -36,4 +36,9 @@ public class CourseService {
     public void deleteCourse(String id) {
         courseRepository.deleteById(id);
     }
+
+    public List<Course> getAllCourses(String id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAllCourses'");
+    }
 }
