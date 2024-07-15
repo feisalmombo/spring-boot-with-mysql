@@ -1,7 +1,10 @@
 package com.bestproject.springjpacourse;
 
+import com.bestproject.springjpa.Topic;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Course {
@@ -11,6 +14,19 @@ public class Course {
     private String name;
     private String description;
 
+    @ManyToOne
+    private Topic topic;
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
+    }
+
+
     // Constructor
     public Course() {
 
@@ -18,11 +34,12 @@ public class Course {
 
     
     //  This Course Constructor
-    public Course(String id, String name, String description) {
+    public Course(String id, String name, String description, String topicId) {
         super();
         this.id = id;
         this.name = name;
         this.description = description;
+        this.topic = new Topic(topicId, "", "");
     }
 
 

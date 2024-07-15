@@ -13,9 +13,9 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
-    public List<Course> getAllCourses() {
+    public List<Course> getAllCourses(String topicId) {
         List<Course> courses = new ArrayList<>();
-        courseRepository.findAll()
+        courseRepository.findByTopicId(topicId)
                 .forEach(courses::add);
         return courses;
     }
@@ -29,16 +29,11 @@ public class CourseService {
         courseRepository.save(course);
     }
 
-    public void updateCourse(String id, Course course) {
+    public void updateCourse(Course course) {
         courseRepository.save(course);
     }
 
     public void deleteCourse(String id) {
         courseRepository.deleteById(id);
-    }
-
-    public List<Course> getAllCourses(String id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAllCourses'");
     }
 }
