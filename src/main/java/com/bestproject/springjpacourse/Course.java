@@ -17,7 +17,7 @@ public class Course {
     }
 
     
-    //  This Topic Constructor
+    //  This Course Constructor
     public Course(String id, String name, String description) {
         super();
         this.id = id;

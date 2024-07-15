@@ -11,29 +11,29 @@ import org.springframework.stereotype.Service;
 public class CourseService {
 
     @Autowired
-    private CourseRepository topicRepository;
+    private CourseRepository courseRepository;
 
-    public List<Course> getAllTopics() {
-        List<Course> topics = new ArrayList<>();
-        topicRepository.findAll()
-                .forEach(topics::add);
-        return topics;
+    public List<Course> getAllCourses() {
+        List<Course> courses = new ArrayList<>();
+        courseRepository.findAll()
+                .forEach(courses::add);
+        return courses;
     }
 
-    public Optional<Course> getTopic(String id) {
-        return topicRepository.findById(id);
+    public Optional<Course> getCourse(String id) {
+        return courseRepository.findById(id);
 
     }
 
-    public void addTopic(Course topic) {
-        topicRepository.save(topic);
+    public void addCourse(Course course) {
+        courseRepository.save(course);
     }
 
-    public void updateTopic(String id, Course topic) {
-        topicRepository.save(topic);
+    public void updateCourse(String id, Course course) {
+        courseRepository.save(course);
     }
 
-    public void deleteTopic(String id) {
-        topicRepository.deleteById(id);
+    public void deleteCourse(String id) {
+        courseRepository.deleteById(id);
     }
 }
