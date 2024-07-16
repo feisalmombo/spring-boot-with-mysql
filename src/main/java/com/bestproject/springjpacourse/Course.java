@@ -21,19 +21,16 @@ public class Course {
         return topic;
     }
 
-
     public void setTopic(Topic topic) {
         this.topic = topic;
     }
-
 
     // Constructor
     public Course() {
 
     }
 
-    
-    //  This Course Constructor
+    // This Course Constructor
     public Course(String id, String name, String description, String topicId) {
         super();
         this.id = id;
@@ -42,10 +39,10 @@ public class Course {
         this.topic = new Topic(topicId, "", "");
     }
 
-
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
